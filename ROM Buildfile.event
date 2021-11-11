@@ -9,6 +9,8 @@
 //FEBuilderでやるので、ここではやらない
 //    #include "repointedTextTable.event"
 //
+    #include "NewTextTable.event"
+    
     //Text first for Text ID definitions
     #include "Text/Install Text Data.event"
     //MESSAGE Used text space ends at currentOffset
@@ -20,14 +22,17 @@
     //Engine Hacks
     #include "Engine Hacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
-/*
+
     //For testing
     
-    Events
-    //#include "Events/Release_map.event"
+    //Events
+    #include "Events/Release_map.event"
 
     //Maps
-    #include "Maps/MasterMapInstaller.event" */
+    #include "Maps/MasterMapInstaller.event"
+  
+  
+    MESSAGE TextTable
   
     MESSAGE Used free space ends at currentOffset
 #else
