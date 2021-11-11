@@ -1,2 +1,3 @@
+//Unedited
 #define NewTextTable 0x15D48C
 #define TextTable NewTextTable
