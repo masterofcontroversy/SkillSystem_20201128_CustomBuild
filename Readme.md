@@ -1,7 +1,6 @@
 ## Instructions:
 
-### Back up your ROM before doing custom build  
-This is very important
+### Back up your ROM before doing custom build. This is very important
 
 Have the SkillSystems_20201128 patch installed in your ROM  
 
