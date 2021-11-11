@@ -44,7 +44,7 @@ if /I [%1]==[assemble] (
   echo Processing text
 
   cd "%base_dir%Text"
-  echo: | ("%textprocess%" text_buildfile.txt --parser-exe "%parsefile%" --installer "InstallTextData.event" --definitions "TextDefinitions.event")
+  echo: | ("%textprocess%" text_buildfile.txt --parser-exe "%parsefile%" --installer "InstallTextData.event")
 
 if /I [%1]==[assemble] (
 echo:

@@ -302,8 +302,8 @@ def main(args):
 		os.remove(outputPath)
 		sys.exit("ERROR: ParseFile errored while parsing text for {}:\n  {}".format(e.textEntry.get_pretty_identifier(), e.errDesc))
 
-	with open(outputDefPath, 'w') as f:
-		f.writelines(generate_definitions_lines(macroizedInputName, entryList))
+	#with open(outputDefPath, 'w') as f:
+		#f.writelines(generate_definitions_lines(macroizedInputName, entryList))
 
 if __name__ == '__main__':
 	main(sys.argv[1:])

@@ -10,6 +10,7 @@ set "target_ups=%~dp0SkillsTest.ups"
 
 @rem defining tools
 
+set "tablegetter=%~dp0Tools\TableGetter\tablegetter.exe"
 set "c2ea=%~dp0Tools\C2EA\c2ea"
 set "textprocess=%~dp0Tools\TextProcess\text-process-classic"
 set "ups=%~dp0Tools\ups\ups"
@@ -20,6 +21,8 @@ set "parsefile=%~dp0Event Assembler\Tools\ParseFile.exe"
 set "base_dir=%~dp0"
 
 @rem do the actual building
+
+%tablegetter% "Input.gba"
 
 echo Copying ROM
 
@@ -33,4 +36,4 @@ ColorzCore A FE8 "-output:%target_rom%" "-input:%main_event%" "--nocash-sym:%tar
 
 echo:
 echo Done!
-rem pause
+@rem pause
