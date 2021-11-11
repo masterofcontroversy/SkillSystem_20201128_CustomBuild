@@ -10,6 +10,10 @@ Make whatever edits you need
 
 Run Skill Custom Build in FEBuilder  
 
+FEBuilder will likely ask to uninstall some patches. You might have to allow it to, you might be able to get away with not uninstalling the patches.  
+I suggest you err on the side of caution, and let FEBuilder uninstall the patches.  
+
+NOTE: It's a good idea to do a custom build early in your project to reduce the chance of anything breaking  
 
 ## How to edit Gaiden Magic:
 
