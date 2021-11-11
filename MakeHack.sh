@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # USAGE: ./MakeHack.sh [quick]
 # If first argument is "quick", then this will not update text or tables
 
