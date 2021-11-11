@@ -28,6 +28,19 @@ echo Copying ROM
 
 copy "%source_rom%" "%target_rom%"
 
+  echo:
+  echo Processing tables
+
+  cd "%base_dir%Tables"
+  echo: | ("%c2ea%" "%source_rom%" -installer "%base_dir%Tables/TableInstaller.event")
+
+  echo:
+  echo Processing text
+
+  cd "%base_dir%Text"
+  echo: | ("%textprocess%" text_buildfile.txt --parser-exe "%parsefile%" --installer "InstallTextData.event")
+
+
 echo:
 echo Assembling
 
