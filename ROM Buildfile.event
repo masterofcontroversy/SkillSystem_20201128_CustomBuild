@@ -26,10 +26,10 @@
     //For testing
     
     //Events
-    #include "Events/Release_map.event"
+    //#include "Events/Release_map.event"
 
     //Maps
-    #include "Maps/MasterMapInstaller.event"
+    //#include "Maps/MasterMapInstaller.event"
   
   
     MESSAGE TextTable
