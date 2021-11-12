@@ -26,6 +26,9 @@ POIN Proc_Foresight Proc_Miracle Proc_Mercy Proc_Aegis Proc_Pavise Proc_GreatShi
 POIN Proc_StealHP Proc_Sol Proc_AetherHeal	//skills that heal based on final damage
 POIN Proc_BlackMagic Proc_Petrify Proc_Enrage Proc_Deadeye //skills that apply a status effect
 POIN Proc_Corrosion //skills that don't affect damage
+#ifdef GAIDEN_MAGIC
+	POIN Proc_GaidenMagicHPCost // Very similar to a counter.
+#endif // GAIDEN_MAGIC
 
 #ifdef __Proc_StatusWeapons2__
 POIN Proc_StatusWeapons2
