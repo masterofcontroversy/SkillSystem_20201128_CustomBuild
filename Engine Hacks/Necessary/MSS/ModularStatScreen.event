@@ -190,6 +190,8 @@
     ALIGN 4
     MSS_page4:
       #incbin "asm/mss_page4.dmp"
+      ORG currentOffset - 4
+      POIN GaidenStatScreen
 	
     ALIGN 4
     TxtData0x0D4B:

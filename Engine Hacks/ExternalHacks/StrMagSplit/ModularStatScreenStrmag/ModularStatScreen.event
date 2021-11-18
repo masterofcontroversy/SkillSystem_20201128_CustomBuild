@@ -30,10 +30,10 @@
 	#else // ENABLE_PERSONAL_INFO
 	
 	  ORG 0x205b24 //24 for stat screen
-        POIN MSS_page1|1 MSS_page2|1 MSS_page3|1
+        POIN MSS_page1|1 MSS_page2|1 MSS_page3|1 MSS_page4|1
 
       ORG $88690
-        BYTE 3 //make 3 pages
+        BYTE 4 //make 3 pages
 	
 	#endif // ENABLE_PERSONAL_INFO
 	
@@ -142,7 +142,13 @@
       ORG $88690
         jumpToHack(PageNumberCheck)	  
 	
+	#else
+        //ORG $889f2  
+        //SHORT $BD30
+        //BL(RText_Page4_ladder) //this has to be in bl range somewhere
+	
 	#endif // ENABLE_PERSONAL_INFO
+	
 	  
 	ORG $2BA28
   jumpToHack(Write_Growths_To_Battle_Struct)
@@ -199,6 +205,20 @@
     PageNumberCheck:
       #include "asm/mss_threepageconditional.lyn.event"
 	  POIN PersonalDataTable
+	  
+  #else
+    ALIGN 4
+    MSS_page4:
+      #incbin "asm/mss_page4.dmp"
+      ORG currentOffset - 4
+      POIN GaidenStatScreen
+	
+    ALIGN 4
+    TxtData0x0D4B:
+      String("Donate to Circles")
+      BYTE 0
+
+    setText(0x0D4B,TxtData0x0D4B)
 	  
   #endif // ENABLE_PERSONAL_INFO
 
