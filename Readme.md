@@ -1,3 +1,7 @@
+## Known issues:
+#### -Installing the custom build with gaiden magic enabled, and again with gaiden magic disabled breaks the game
+#### -Editing personal info on FEBuilder does not work yet. (There's a planned fix to make it work if you don't have gaiden magic installed)
+
 ## Instructions:
 
 ### Back up your ROM before doing custom build. This is very important
@@ -17,6 +21,11 @@ NOTE: It's a good idea to do a custom build early in your project to reduce the 
 
 ## How to edit Gaiden Magic:
 
+### Characters must have the appropriate magic rank to use gaiden spells (eg. you must have anima rank to use fire)
+
 To change what spells units learn and when, edit `Engine Hacks/ExternalHacks/GaidenMagic/GaidenSpellsList.event`
 To change Spell HP cost, edit `Tables/FE8 Nightmare modules/GaidenSpells/GaidenSpellCostTable.csv`
 
+## TODO
+-Expand gaiden_threepageconditional to not show page4 if the unit has not learned any spells yet.  
+-Make a seperate runa page4 for gaiden magic so if it's diabled, you can still edit the personal info table in FEBuilder
