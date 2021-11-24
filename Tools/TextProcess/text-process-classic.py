@@ -144,8 +144,8 @@ def main(args):
 	argParse = argparse.ArgumentParser()
 
 	argParse.add_argument('input', help = 'input text file')
-	argParse.add_argument('--installer', default = 'Install Text Data.event', help = 'name of the installer event file to produce')
-	argParse.add_argument('--definitions', default = 'Text Definitions.event', help = 'name of the definitions event file to produce')
+	argParse.add_argument('--installer', default = 'InstallTextData.event', help = 'name of the installer event file to produce')
+	argParse.add_argument('--definitions', default = 'TextDefinitions.event', help = 'name of the definitions event file to produce')
 	argParse.add_argument('--parser-exe', default = None, help = 'name/path of the parser executable')
 	argParse.add_argument('--depends', default = None, nargs='*', help = 'files that text depends on (typically ParseDefinitions.txt)')
 	argParse.add_argument('--force-refresh', action = 'store_true', help = 'pass to forcefully refresh generated files')

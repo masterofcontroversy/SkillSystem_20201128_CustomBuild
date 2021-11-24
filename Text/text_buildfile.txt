@@ -18,3 +18,9 @@ to cast this spell.[X]
 
 ## GaidenMagicHPCostText
 Cost[X]
+
+## GaidenSpellText
+Spells:[X]
+
+## GaidenSpellDesc
+The spells this person can use.[X]
