@@ -28,5 +28,5 @@ To change Spell HP cost, edit `Tables/FE8 Nightmare modules/GaidenSpells/GaidenS
 
 ## TODO
 -Expand gaiden_threepageconditional to not show page4 if the unit has not learned any spells yet.  
--Make a seperate runa page4 for gaiden magic so if it's diabled, you can still edit the personal info table in FEBuilder
--Make an optoin to insert the vanilla code where Gaiden Magic took over so installing the custom build without it won't cause any problems
+-Make a seperate runa page4 for gaiden magic so if it's diabled, you can still edit the personal info table in FEBuilder  
+-Make an optoin to insert the vanilla code where Gaiden Magic took over so installing the custom build without it won't cause any problems  
