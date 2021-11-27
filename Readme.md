@@ -6,7 +6,7 @@
 
 ### Back up your ROM before doing custom build. This is very important
 
-Have the SkillSystems_20201128 patch installed in your ROM  
+Have the SkillSystems patch installed in your ROM  
 
 Place your most updated hacked ROM into the custombuild folder and name it "Input.gba"  
 
