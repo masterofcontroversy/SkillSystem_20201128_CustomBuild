@@ -10,7 +10,7 @@ Have the SkillSystems_20201128 patch installed in your ROM
 
 Place your most updated hacked ROM into the custombuild folder and name it "Input.gba"  
 
-Make whatever edits you need  
+Make whatever edits you need to `Config.event` along with the other hacks if they are to be installed  
 
 Run Skill Custom Build in FEBuilder  
 

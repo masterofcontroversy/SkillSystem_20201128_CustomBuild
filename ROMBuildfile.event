@@ -2,16 +2,16 @@
 //最小構成を目指したいので、必須事項以外はすべて消す.
     #include "EAstdlib.event"
     #include "CustomDefinitions.event"
-
-    //#define GAIDEN_MAGIC
+    
+    // hack configuration file
+    #include "Config.event"
     
     ORG FreeSpace
 //FEBuilderでやるので、ここではやらない
 //    #include "repointedTextTable.event"
 //
+    //Get the location of the text table
     #include "NewTextTable.event"
-    
-    PROTECT $9E863C
     
     //Text first for Text ID definitions
     #include "Text/InstallTextData.event"
